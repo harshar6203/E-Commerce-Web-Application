@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🛒 E-Commerce Store</h1>
+<h3 id="userRole"></h3>
+<button onclick="logout()">Logout</button>
+<div class="product">
+<h3>Wireless Mouse</h3>
+<p>₹599</p>
+<button onclick="addToCart('Wireless Mouse',599)">Add to Cart</button>
+</div>
+
+<div class="product">
+<h3>Keyboard</h3>
+<p>₹999</p>
+<button onclick="addToCart('Keyboard',999)">Add to Cart</button>
+</div>
+
+<div class="product">
+<h3>Headphones</h3>
+<p>₹1499</p>
+<button onclick="addToCart('Headphones',1499)">Add to Cart</button>
+</div>
+
+<h2>🛍 Cart</h2>
+
+<ul id="cartList"></ul>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+<button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
